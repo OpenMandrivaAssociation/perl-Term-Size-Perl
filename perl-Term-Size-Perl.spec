@@ -51,3 +51,18 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 0.029-2mdv2011.0
++ Revision: 658430
+- rebuild for updates rpm-setup
+
+* Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 0.029-1mdv2010.0
++ Revision: 376244
+- import perl-Term-Size-Perl
+
+
+* Fri May 15 2009 cpan2dist 0.029-1mdv
+- initial mdv release, generated with cpan2dist
+
