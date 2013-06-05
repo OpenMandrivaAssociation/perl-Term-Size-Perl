@@ -4,12 +4,12 @@
 %define release    %mkrel 2
 
 Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
+Version:    %perl_convert_version 0.029
+Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Probes some machine configuration parameters for Term::Size::Perl's sake
-Source:     http://www.cpan.org/modules/by-module/Term/%{realname}-%{version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Term/Term-Size-Perl-0.029.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
@@ -65,4 +65,5 @@ rm -rf %buildroot
 
 * Fri May 15 2009 cpan2dist 0.029-1mdv
 - initial mdv release, generated with cpan2dist
+
 
