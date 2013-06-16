@@ -2,7 +2,7 @@
 %define upstream_version    0.029
 
 Name:       perl-%{realname}
-Version:    %{upstream_version}
+Version:    %perl_convert_version %{upstream_version}
 Release:    3
 License:    GPL or Artistic
 Group:      Development/Perl
@@ -24,7 +24,7 @@ FUNCTIONS
           $columns = chars($h);
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{realname}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
