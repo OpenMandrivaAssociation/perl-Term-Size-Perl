@@ -1,8 +1,5 @@
-
 %define realname   Term-Size-Perl
-%define version    0.029
-%define release    %mkrel 2
-
+%define upstream_version 0.029
 Name:       perl-%{realname}
 Version:    %perl_convert_version 0.029
 Release:    1
@@ -11,9 +8,7 @@ Group:      Development/Perl
 Summary:    Probes some machine configuration parameters for Term::Size::Perl's sake
 Source:     http://www.cpan.org/modules/by-module/Term/Term-Size-Perl-0.029.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
-
 
 BuildArch: noarch
 
@@ -28,7 +23,7 @@ FUNCTIONS
           $columns = chars($h);
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{realname}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -38,14 +33,9 @@ FUNCTIONS
 make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
