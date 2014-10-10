@@ -3,7 +3,7 @@
 
 Name:       perl-%{realname}
 Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Release:    4
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Probes some machine configuration parameters for Term::Size::Perl's sake
