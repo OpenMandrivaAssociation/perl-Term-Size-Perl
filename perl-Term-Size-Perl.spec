@@ -8,7 +8,7 @@ License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Probes some machine configuration parameters for Term::Size::Perl's sake
 Source:     http://www.cpan.org/modules/by-module/Term/%{realname}-%{upstream_version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
+Url:        https://search.cpan.org/dist/%{realname}
 BuildRequires: perl-devel
 
 BuildArch: noarch
