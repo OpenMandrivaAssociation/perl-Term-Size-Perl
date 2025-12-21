@@ -9,6 +9,7 @@ Group:      Development/Perl
 Summary:    Probes some machine configuration parameters for Term::Size::Perl's sake
 Source:     http://www.cpan.org/modules/by-module/Term/%{realname}-%{upstream_version}.tar.gz
 Url:        https://search.cpan.org/dist/%{realname}
+BuildRequires:	make
 BuildRequires: perl-devel
 
 BuildArch: noarch
