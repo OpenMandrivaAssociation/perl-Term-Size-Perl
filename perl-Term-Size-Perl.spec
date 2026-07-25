@@ -1,14 +1,14 @@
 %define realname   Term-Size-Perl
-%define upstream_version    0.029
+%define upstream_version    0.031
 
 Name:       perl-%{realname}
-Version:    %perl_convert_version %{upstream_version}
-Release:    5
+Version:    %{upstream_version}
+Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Probes some machine configuration parameters for Term::Size::Perl's sake
-Source:     http://www.cpan.org/modules/by-module/Term/%{realname}-%{upstream_version}.tar.gz
-Url:        https://search.cpan.org/dist/%{realname}
+Source:     https://cpan.metacpan.org/authors/id/F/FE/FERREIRA/Term-Size-Perl-%{upstream_version}.tar.gz
+Url:        https://github.com/aferreira/cpan-Term-Size-Perl
 BuildRequires:	make
 BuildRequires: perl-devel
 
